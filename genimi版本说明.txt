@@ -1,0 +1,597 @@
+首页
+Gemini API
+文档
+版本说明
+
+
+
+本页面记录了 Gemini API 的更新。
+
+2026 年 6 月 1 日
+以下 Gemini 2.0 模型现已关闭：
+
+gemini-2.0-flash
+gemini-2.0-flash-001
+gemini-2.0-flash-lite
+gemini-2.0-flash-lite-001
+请改用 gemini-3.5-flash 或 gemini-3.1-flash-lite。
+
+2026 年 5 月 28 日
+我们发布了 gemini-3.1-flash-image (Nano Banana 2) 和 gemini-3-pro-image (Nano Banana Pro)，这是我们原生视觉模型 Gemini 3.1 Flash Image 和 Gemini 3 Pro Image 的正式版 (GA)。
+
+支持视频转图片生成：您现在可以传递视频文件（通过直接上传或作为公开的 YouTube 网址），将其作为多模态上下文与文本提示一起使用，以生成优质的缩略图、电影级海报或摘要信息图表。此功能仅在 gemini-3.1-flash-image 型号上受支持。如需了解详情，请参阅视频转图片生成指南。
+
+弃用公告：gemini-3.1-flash-image-preview 和 gemini-3-pro-image-preview 模型已被弃用，并将于 2026 年 6 月 25 日停止服务。
+
+2026 年 5 月 25 日
+gemini-3.1-flash-lite-preview 模型已关停。请改用 gemini-3.1-flash-lite。
+2026 年 5 月 19 日
+发布了 gemini-3.5-flash，Gemini 3.5 Flash 的正式版 (GA)，这是我们最智能的模型，可在智能体和编码任务中持续提供前沿性能。
+
+推出了Gemini API 中的托管式智能体，目前处于公开预览阶段。这样一来，开发者便可构建和部署在安全、隔离的 Google 托管式 Linux 沙盒环境中运行的自主有状态智能体。如需了解详情，请参阅代理概览页面和快速入门。
+
+发布了通用 Antigravity Agent 受管代理 antigravity-preview-05-2026，目前处于公开预览版阶段。 Antigravity 智能体可以在其沙盒容器内自主规划、推理、编写和执行代码、管理文件以及浏览网页。如需查看代码示例和规范，请参阅 Antigravity Agent 指南。
+
+2026 年 5 月 7 日
+发布了 gemini-3.1-flash-lite，即Gemini 3.1 Flash-Lite 的正式发布 (GA) 版本，该版本在速度、规模和成本效益方面进行了优化。
+
+弃用公告：gemini-3.1-flash-lite-preview 模型将于 2026 年 5 月 11 日弃用，并于 2026 年 5 月 25 日关停。
+
+2026 年 5 月 6 日
+即将发生的重大变更：互动 API 请求和响应架构（outputs → steps）以及输出格式配置 (response_format) 即将发生变更。新架构将于 5 月 26 日成为默认架构，旧版架构将于 6 月 8 日移除。 如需了解详情，请参阅迁移指南。
+2026 年 5 月 5 日
+更新了文件搜索，以支持多模态搜索。您现在可以使用 gemini-embedding-2 模型以原生方式嵌入和搜索图片。接地元数据现在包含 media_id（用于视觉引用）和 page_numbers（用于指示信息来源）。如需了解详情，请参阅文件搜索指南。
+2026 年 5 月 4 日
+在 Gemini API 中推出了事件驱动型 Webhook 支持，以取代 Batch API 和长时间运行的操作的轮询工作流。
+2026 年 4 月 30 日
+gemini-robotics-er-1.5-preview 模型已关停。请改用 gemini-robotics-er-1.6-preview。
+2026 年 4 月 22 日
+发布了 gemini-embedding-2 正式版 (GA)。如需了解详情，请参阅嵌入页面。
+2026 年 4 月 21 日
+发布了新版Deep Research代理，其中包含协作规划、可视化支持、MCP 服务器集成和文件搜索功能：
+
+deep-research-preview-04-2026：专为速度和效率而设计，非常适合流式传输回客户端界面。
+deep-research-max-preview-04-2026：自动收集和合成上下文的最大全面性。
+2026 年 4 月 15 日
+推出了 Gemini 3.1 Flash TTS 预览版，这是一款经济实惠、富有表现力且可控的文字转语音模型。如需了解详情，请参阅 Text-to-Speech 文档。
+2026 年 4 月 14 日
+发布了更新后的机器人模型 gemini-robotics-er-1.6-preview。 现在，它具备了新的功能，例如读取乐器，以及改进的空间和物理推理能力。如需了解详情，请参阅 Gemini Robotics-ER 页面和博客。
+
+弃用公告：gemini-robotics-er-1.5-preview 模型将于 2026 年 4 月 30 日上午 9 点（太平洋标准时间）关停。
+
+2026 年 4 月 2 日
+已发布 gemma-4-26b-a4b-it 和 gemma-4-31b-it，可在 AI Studio 中以及通过 Gemini API 使用，作为 Gemma 4 发布的一部分。
+April 1, 2026
+推出了新的 Flex 和 Priority 推理层级，可提供更多选项来优化费用或延迟时间。
+2026 年 3 月 31 日
+推出了 Veo 3.1 Lite 预览版 veo-3.1-lite-generate-preview，这是我们最具成本效益的视频生成模型，专为快速迭代和构建高容量应用而设计。
+
+gemini-2.5-flash-lite-preview-09-2025 模型已关停。请改用 gemini-3.1-flash-lite-preview。
+
+2026 年 3 月 26 日
+发布于 gemini-3.1-flash-live-preview，是专为实时对话和语音优先 AI 应用设计的最新音频转音频 (A2A) 模型。请阅读 Live API 文档，开始使用该 API。
+2026 年 3 月 25 日
+发布了 Lyria 3 音乐创作模型：lyria-3-clip-preview（30 秒片段）和 lyria-3-pro-preview（完整歌曲）。这两款模型均可接受文本和图片输入，并生成高品质的 48 kHz 立体声音频。如需了解详情和代码示例，请参阅音乐生成指南。
+2026 年 3 月 23 日
+在 AI Studio 中推出了预付款和后付费结算方案。现有账号可能会受到影响；如需了解详情，请参阅结算文档。
+2026 年 3 月 18 日
+发布了新的内置工具和函数调用组合功能，让您可以在一次 API 调用中同时使用 Gemini 的内置工具和自定义函数调用工具。
+Gemini 3 模型现已支持Grounding with Google Maps。
+2026 年 3 月 16 日
+推出了经过改版的使用层级和结算账号支出上限，以提升用户结算体验。
+2026 年 3 月 12 日
+在 AI Studio 的结算中引入了项目级支出上限。
+2026 年 3 月 10 日
+发布了我们的首个多模态嵌入模型 gemini-embedding-2-preview。 它支持文本、图片、视频、音频和 PDF 输入，并将所有模态映射到统一的嵌入空间。如需了解详情，请参阅嵌入。
+
+弃用公告：gemini-2.5-flash-lite-preview-09-2025 模型将于 2026 年 3 月 31 日关停。
+
+2026 年 3 月 9 日
+Gemini 3 Pro 预览版模型已关闭。gemini-3-pro-preview 现在指向 gemini-3.1-pro-preview。
+2026 年 3 月 3 日
+推出了 Gemini 3.1 Flash-Lite 预览版，这是 Gemini 3 系列中的首款 Flash-Lite 模型。如需了解规格、具体更新和开发者指南，请参阅模型页面。
+2026 年 2 月 26 日
+推出了 Nano Banana 2（Gemini 3.1 Flash Image 预览版），这是一款高效模型，专为极致速度与大规模量产场景而优化。
+
+弃用公告：Gemini 3 Pro（预览版）(gemini-3-pro-preview) 将于 2026 年 3 月 9 日停止服务。
+
+2026 年 2 月 19 日
+发布了 Gemini 3.1 Pro 预览版，这是全新 Gemini 3 系列中的最新迭代版本。
+为同时使用 Bash 和工具进行构建的用户推出了一个单独的端点 gemini-3.1-pro-preview-customtools，该端点可以更好地确定自定义工具的优先级。
+2026 年 2 月 18 日
+废弃公告：以下模型将于 2026 年 6 月 1 日停止服务：
+
+gemini-2.0-flash
+gemini-2.0-flash-001
+gemini-2.0-flash-lite
+gemini-2.0-flash-lite-001
+2026 年 2 月 17 日
+以下型号已停用：
+
+gemini-2.5-flash-preview-09-25
+imagen-4.0-generate-preview-06-06
+imagen-4.0-ultra-generate-preview-06-06
+2026 年 1 月 29 日
+在 gemini-3-pro-preview 和 gemini-3-flash-preview 中推出了对“计算机使用”工具的支持。
+2026 年 1 月 21 日
+更改了 latest 别名：
+
+gemini-pro-latest 已切换为 gemini-3-pro-preview
+gemini-flash-latest 已切换为 gemini-3-flash-preview
+2026 年 1 月 15 日
+弃用公告：以下模型将于 2026 年 2 月 17 日关停：
+
+gemini-2.5-flash-preview-09-25
+imagen-4.0-generate-preview-06-06
+imagen-4.0-ultra-generate-preview-06-06
+gemini-2.5-flash-image-preview 模型已关闭。
+
+2026 年 1 月 14 日
+text-embedding-004 模型已关停。
+2026 年 1 月 13 日
+为 Veo 添加了 4K 输出分辨率，并为所有分辨率的纵向视频提供了更多支持。
+2026 年 1 月 12 日
+推出了模型生命周期功能。现在，部分模型将指定生命周期阶段和弃用时间表。如需了解详情，请参阅以下文档：
+
+模型阶段
+2026 年 1 月 8 日
+推出了对 Cloud Storage 存储分区以及任何公共和私有数据库预签名网址的支持，作为 Gemini API 的数据输入源。文件大小上限也从 20MB 提高到 100MB。如需了解详情，请参阅文件输入方法指南。
+2025 年 12 月 19 日
+在 v1beta 中，对 Interactions API 公开预览版引入了一项重大更改。total_reasoning_tokens 字段已重命名为 total_thought_tokens，以便更好地与思考模型中的“想法”概念保持一致。
+2025 年 12 月 17 日
+推出了 Gemini 3 Flash 预览版 gemini-3-flash-preview，以远低于大型模型的成本，提供可媲美大型模型的快速前沿级性能。升级了视觉和空间推理能力，以及代理式编码能力。阅读有关部分新功能的文档，包括：
+
+多模态函数响应
+使用图片执行代码
+2025 年 12 月 12 日
+发布了 gemini-2.5-flash-native-audio-preview-12-2025，这是 Live API 的新原生音频模型。此更新可提高模型处理复杂工作流程的能力。如需了解详情，请参阅 Live API 指南和 Gemini 2.5 Flash Native Audio。
+2025 年 12 月 11 日
+发布了 Beta 版的 Interactions API。此 API 提供了一个与 Gemini 模型和代理交互的统一界面。如需了解详情，请参阅互动 API 指南。
+
+推出了 Gemini Deep Research 代理（预览版）。它可以自主规划、执行和汇总多步骤研究任务的结果。如需了解详情，请参阅 Deep Research 指南。
+
+2025 年 12 月 10 日
+推出了对文字转语音模型的增强功能，包括 Gemini 2.5 Flash TTS 预览版（针对低延迟进行了优化）和 Gemini 2.5 Pro TTS 预览版（针对质量进行了优化），可提供更强的表现力、更精准的语速和更流畅的对话。
+2025 年 12 月 9 日
+以下 Gemini Live API 模型现已关闭：
+gemini-2.0-flash-live-001
+gemini-live-2.5-flash-preview
+2024 年 12 月 5 日
+Gemini 3 的依托 Google 搜索进行接地功能将于 2026 年 1 月 5 日开始结算。
+2025 年 12 月 4 日
+弃用公告：gemini-2.5-flash-image-preview 模型将于 2026 年 1 月 15 日关停。
+2025 年 12 月 3 日
+弃用公告：text-embedding-004 模型将于 2026 年 1 月 14 日停止服务。
+2025 年 11 月 20 日
+发布了 Gemini 3 Pro Image 预览版 gemini-3-pro-image-preview，这是 Nano Banana 模型的下一代版本。如需了解详情，请参阅图片生成页面。
+2025 年 11 月 18 日
+发布了首款 Gemini 3 系列模型 gemini-3-pro-preview，这是我们前沿的推理和多模态理解模型，具有强大的智能体和编码能力。
+
+除了在智能性和性能方面有所改进之外，Gemini 3 Pro 预览版还引入了以下方面的新行为：
+
+媒体分辨率
+思考签名
+思考等级
+如需了解迁移、新功能和规范，请参阅 Gemini 3 开发者指南。
+
+2025 年 11 月 11 日
+弃用公告：以下模型将被关闭：
+
+11 月 12 日：
+
+veo-3.0-fast-generate-preview
+veo-3.0-generate-preview
+11 月 14 日：
+
+gemini-2.0-flash-exp-image-generation
+gemini-2.0-flash-preview-image-generation
+2025 年 11 月 10 日
+以下模型已关闭：
+
+imagen-3.0-generate-002
+请改用 Imagen 4。如需了解详情，请参阅 Gemini 弃用表。
+
+2025 年 11 月 6 日
+面向公众预览版发布了文件搜索 API，使开发者能够以自己的数据为依据生成回答。如需了解详情，请参阅新版文件搜索页面。
+2025 年 11 月 4 日
+对于 Gemini 2.5 Flash Image，图片的输入令牌数量已从 1,290 个减少到 258 个，从而降低了图片编辑的费用。
+
+弃用公告：以下模型将被关闭：
+
+11 月 18 日：
+
+gemini-2.5-flash-lite-preview-06-17
+gemini-2.5-flash-preview-05-20
+12 月 2 日：
+
+gemini-2.0-flash-thinking-exp
+gemini-2.0-flash-thinking-exp-01-21
+gemini-2.0-flash-thinking-exp-1219
+gemini-2.5-pro-preview-03-25
+gemini-2.5-pro-preview-05-06
+gemini-2.5-pro-preview-06-05
+12 月 9 日：
+
+gemini-2.0-flash-lite-preview
+gemini-2.0-flash-lite-preview-02-05
+gemini-2.0-flash-exp
+gemini-2.0-pro-exp
+gemini-2.0-pro-exp-02-05
+2025 年 10 月 29 日
+针对 Gemini API 推出了新的日志记录和数据集工具。
+2025 年 10 月 20 日
+以下 Gemini Live API 模型现已关闭：
+
+gemini-2.5-flash-preview-native-audio-dialog
+gemini-2.5-flash-exp-native-audio-thinking-dialog
+您可以改用 gemini-2.5-flash-native-audio-preview-09-2025。
+
+弃用公告：gemini-2.0-flash-live-001 和 gemini-live-2.5-flash-preview 将于 2025 年 12 月 9 日关闭。
+
+2025 年 10 月 17 日
+Grounding with Google Maps 现已正式发布。如需了解详情，请参阅Grounding with Google Maps文档。
+2025 年 10 月 15 日
+发布了Veo 3.1 和 3.1 Fast 公开预览版，新增了以下功能：
+
+扩展 Veo 创作的视频。
+参考最多三张图片来生成视频。
+提供第一帧和最后一帧图片，以便根据这些图片生成视频。
+此次发布还新增了更多 Veo 3 输出视频时长选项：4 秒、6 秒和 8 秒。
+
+弃用公告：veo-3.0-generate-preview 和 veo-3.0-fast-generate-preview 将于 2025 年 11 月 12 日关停。
+
+2025 年 10 月 7 日
+发布了 Gemini 2.5 Computer Use 预览版
+2025 年 10 月 2 日
+正式发布 Gemini 2.5 Flash Image：使用 Gemini 生成图片
+2025 年 9 月 29 日
+以下 Gemini 1.5 模型现已关闭：
+gemini-1.5-pro
+gemini-1.5-flash-8b
+gemini-1.5-flash
+2025 年 9 月 25 日
+发布了 Gemini Robotics-ER 1.5 预览版模型。请参阅机器人技术概览，了解如何将该模型用于机器人技术应用。
+
+发布了以下预览模型：
+
+gemini-2.5-flash-preview-09-2025
+gemini-2.5-flash-lite-preview-09-2025
+如需了解详情，请参阅模型页面。
+
+2025 年 9 月 23 日
+发布了 gemini-2.5-flash-native-audio-preview-09-2025，这是 Live API 的新原生音频模型，可改进函数调用和语音截断处理。如需了解详情，请参阅 Live API 指南和 Gemini 2.5 Flash Native Audio。
+2025 年 9 月 16 日
+弃用公告：以下模型将于 2025 年 10 月关闭：
+
+embedding-001
+embedding-gecko-001
+gemini-embedding-exp-03-07 (gemini-embedding-exp)
+如需详细了解最新的嵌入模型，请参阅嵌入页面。
+
+2025 年 9 月 10 日
+发布了对 Batch API 中的 Embeddings 模型的支持，并向 OpenAI 兼容性库添加了 Batch API，以便更轻松地开始使用批量查询。
+2025 年 9 月 9 日
+发布了 Veo 3 和 Veo 3 Fast 正式版，价格更低，并新增了宽高比、分辨率和种子选项。如需了解详情，请参阅 Veo 文档。
+2025 年 8 月 26 日
+发布了最新的原生图片生成模型 Gemini 2.5 Image Preview。
+2025 年 8 月 18 日
+正式发布了 网址 上下文工具，该工具可用于向提示提供网址作为附加上下文。对将网址上下文与 gemini-2.0-flash 模型搭配使用的支持（在实验性发布期间提供）将于一周后停止。
+2025 年 8 月 14 日
+正式发布 (GA) 了 Imagen 4 Ultra、标准版和快速版模型。如需了解详情，请参阅 Imagen 页面。
+2025 年 8 月 7 日
+allow_adult设置现已在受限地区推出。如需了解详情，请参阅 Veo 页面。
+2025 年 7 月 31 日
+针对 Veo 3 预览版模型推出了图像转视频功能。
+发布了 Veo 3 Fast 预览版模型。
+如需详细了解 Veo 3，请访问 Veo 页面。
+2025 年 7 月 22 日
+发布了gemini-2.5-flash-lite，这是我们快速、低成本、高性能的 Gemini 2.5 模型。如需了解详情，请参阅 Gemini 2.5 Flash-Lite。
+2025 年 7 月 17 日
+推出了 veo-3.0-generate-preview，这是 Veo 的最新更新，引入了带音频的视频生成功能。如需详细了解 Veo 3，请访问 Veo 页面。
+
+提高了 Imagen 4 Standard 和 Ultra 的速率限制。如需了解详情，请访问速率限制页面。
+
+2025 年 7 月 14 日
+发布了文本嵌入模型的稳定版 gemini-embedding-001。如需了解详情，请参阅嵌入。gemini-embedding-exp-03-07 模型将于 2025 年 8 月 14 日弃用。
+2025 年 7 月 7 日
+推出了 Gemini API 批量模式。将请求分批发送，并以异步方式进行处理。如需了解详情，请参阅批量模式。
+2025 年 6 月 26 日
+预览版模型 gemini-2.5-pro-preview-05-06 和 gemini-2.5-pro-preview-03-25 现在会重定向到最新的稳定版 gemini-2.5-pro。
+
+gemini-2.5-pro-exp-03-25已关机。
+
+2025 年 6 月 24 日
+发布了 Imagen 4 Ultra 和标准预览版模型。如需了解详情，请参阅图片生成页面。
+2025 年 6 月 17 日
+发布了 gemini-2.5-pro，这是我们功能最强大的模型的稳定版，现在还具备自适应思考能力。如需了解详情，请参阅 Gemini 2.5 Pro 和思考。gemini-2.5-pro-preview-05-06将于 2025 年 6 月 26 日重定向到 gemini-2.5-pro。
+发布了 gemini-2.5-flash，这是我们的首个稳定版 2.5 Flash 模型。如需了解详情，请参阅 Gemini 2.5 Flash。 gemini-2.5-flash-preview-04-17 将于 2025 年 7 月 15 日弃用。
+发布了 gemini-2.5-flash-lite-preview-06-17，这是一款低成本、高性能的 Gemini 2.5 模型。如需了解详情，请参阅 Gemini 2.5 Flash-Lite 预览版。
+2025 年 6 月 5 日
+发布了 gemini-2.5-pro-preview-06-05，这是我们最强大的模型的新版本，现在具有自适应思维能力。如需了解详情，请参阅 Gemini 2.5 Pro 预览版和思考。 gemini-2.5-pro-preview-05-06 将于 2025 年 6 月 26 日重定向到 gemini-2.5-pro。
+2025 年 5 月 27 日
+最后一个可用的调优模型 Gemini 1.5 Flash 001 已关闭。 任何模型都不再支持调优。 请参阅使用 Gemini API 进行微调。
+2025 年 5 月 20 日
+API 更新：
+
+推出了对使用剪辑间隔和可配置的帧速率采样进行自定义视频预处理的支持。
+推出了多工具使用功能，支持在同一 generateContent 请求中配置代码执行和依托 Google 搜索进行接地。
+在 Live API 中推出了对异步函数调用的支持。
+推出了实验性网址上下文工具，用于提供网址作为提示的额外上下文。
+模型更新：
+
+发布了 gemini-2.5-flash-preview-05-20，这是一款经过优化的 Gemini 预览版模型，具有出色的性价比和自适应思维能力。如需了解详情，请参阅 Gemini 2.5 Flash 预览版和思考。
+发布了 gemini-2.5-pro-preview-tts 和 gemini-2.5-flash-preview-tts 模型，这些模型能够生成包含一个或两个说话者的语音。
+发布了 lyria-realtime-exp 模型，该模型可实时生成音乐。
+发布了 gemini-2.5-flash-preview-native-audio-dialog 和 gemini-2.5-flash-exp-native-audio-thinking-dialog，这是两款支持原生音频输出功能的 Live API 新 Gemini 模型。如需了解详情，请参阅 Live API 指南和 Gemini 2.5 Flash 原生音频。
+发布了 gemma-3n-e4b-it 预览版，可在 AI Studio 中使用，也可通过 Gemini API 使用，作为 Gemma 3n 发布的一部分。
+2025 年 5 月 7 日
+发布了 gemini-2.0-flash-preview-image-generation，一个用于生成和编辑图片的预览版模型。如需了解详情，请参阅图片生成和 Gemini 2.0 Flash 预览版图片生成。
+2025 年 5 月 6 日
+发布了 gemini-2.5-pro-preview-05-06，这是我们功能最强大的模型的新版本，在代码和函数调用方面有所改进。gemini-2.5-pro-preview-03-25 将自动指向新版模型。
+2025 年 4 月 17 日
+发布了 gemini-2.5-flash-preview-04-17，这是一款经过优化的 Gemini 预览版模型，具有出色的性价比和自适应思维能力。如需了解详情，请参阅 Gemini 2.5 Flash 预览版和思考。
+2025 年 4 月 16 日
+为 Gemini 2.0 Flash 推出了上下文缓存功能。
+2025 年 4 月 9 日
+模型更新：
+
+发布了 veo-2.0-generate-001，这是一款正式版 (GA) 文本到视频和图片到视频模型，能够生成细节丰富且富有艺术气息的视频。如需了解详情，请参阅 Veo 文档。
+发布了 gemini-2.0-flash-live-001，即启用了结算功能的 Live API 模型的公开预览版。
+
+增强的会话管理和可靠性
+
+会话恢复：在临时网络中断期间保持会话有效。该 API 现在支持服务器端会话状态存储（最长 24 小时），并提供用于重新连接和从上次中断处继续的句柄 (session_resumption)。
+通过上下文压缩实现更长的会话：支持超出之前时间限制的扩展互动。配置上下文窗口压缩，使用滑动窗口机制自动管理上下文长度，防止因上下文限制而突然终止。
+正常断开连接通知：接收 GoAway 服务器消息，指示连接即将关闭，以便在终止之前进行正常处理。
+更好地控制互动动态
+
+可配置的语音活动检测 (VAD)：选择灵敏度级别，或完全停用自动 VAD，并使用新的客户端事件（activityStart、activityEnd）进行手动轮流发言控制。
+
+可配置的中断处理：决定用户输入是否应中断模型的回答。
+
+可配置的轮流覆盖范围：选择 API 是持续处理所有音频和视频输入，还是仅在检测到最终用户说话时捕获音频和视频输入。
+
+可配置的媒体分辨率：通过选择输入媒体的分辨率，优化质量或令牌使用情况。
+
+更丰富的输出内容和功能
+
+更多语音和语言选项：新增了两种语音和 30 种语言，可用于音频输出。现在，您可以在 speechConfig 中配置输出语言。
+
+文本流式传输：以增量方式接收生成的文本回答，从而更快地向用户显示回答。
+
+token 使用情况报告：通过服务器消息的 usageMetadata 字段中提供的详细 token 数量（按模态和提示或回答阶段细分）深入了解使用情况。
+
+2025 年 4 月 4 日
+发布了 gemini-2.5-pro-preview-03-25，这是已启用结算功能的 Gemini 2.5 Pro 公开预览版。您可以继续在免费层级中使用 gemini-2.5-pro-exp-03-25。
+2025 年 3 月 25 日
+发布于 gemini-2.5-pro-exp-03-25，是一款公开实验版 Gemini 模型，默认情况下始终处于思考模式。 如需了解详情，请参阅 Gemini 2.5 Pro Experimental。
+2025 年 3 月 12 日
+模型更新：
+
+发布了一款实验性 Gemini 2.0 Flash 模型，能够生成和修改图片。
+已发布 gemma-3-27b-it，可在 AI Studio 中使用，也可通过 Gemini API 使用，是 Gemma 3 发布的一部分。
+API 更新：
+
+新增了对 YouTube 网址作为媒体来源的支持。
+添加了对包含小于 20MB 的内嵌视频的支持。
+2025 年 3 月 11 日
+SDK 更新：
+
+发布了 Google Gen AI SDK（适用于 TypeScript 和 JavaScript）的公开预览版。
+2025 年 3 月 7 日
+模型更新：
+
+发布了 gemini-embedding-exp-03-07，一款基于 Gemini 的实验性嵌入模型，目前处于公开预览版阶段。
+2025 年 2 月 28 日
+API 更新：
+
+为基于 Gemini 2.0 Pro 的实验性模型 gemini-2.0-pro-exp-02-05 添加了对将搜索作为工具的支持。
+2025 年 2 月 25 日
+模型更新：
+
+发布了 gemini-2.0-flash-lite，即 Gemini 2.0 Flash-Lite 的正式发布 (GA) 版本，该版本在速度、规模和成本效益方面都经过了优化。
+2025 年 2 月 19 日
+AI Studio 更新：
+
+支持其他地区（科索沃、格陵兰和法罗群岛）。
+API 更新：
+
+支持其他地区（科索沃、格陵兰和法罗群岛）。
+2025 年 2 月 18 日
+模型更新：
+
+Gemini 1.0 Pro 不再受支持。如需查看支持的模型的列表，请参阅 Gemini 模型。
+2025 年 2 月 11 日
+API 更新：
+
+更新了 OpenAI 库兼容性。
+2025 年 2 月 6 日
+模型更新：
+
+发布了 Gemini API 中的 Imagen 3 的正式版 (GA) imagen-3.0-generate-002。
+SDK 更新：
+
+发布了 Google Gen AI SDK for Java 公开预览版。
+2025 年 2 月 5 日
+模型更新：
+
+发布了 gemini-2.0-flash-001，这是 Gemini 2.0 Flash 的正式版 (GA)，支持纯文本输出。
+发布了 gemini-2.0-pro-exp-02-05，即 Gemini 2.0 Pro 的实验性公开预览版。
+发布了 gemini-2.0-flash-lite-preview-02-05，这是一款针对成本效益进行优化的实验性公开预览版模型。
+API 更新：
+
+为代码执行添加了文件输入和图表输出支持。
+SDK 更新：
+
+发布了 Google Gen AI SDK for Python 正式版 (GA)。
+2025 年 1 月 21 日
+模型更新：
+
+发布了 gemini-2.0-flash-thinking-exp-01-21，这是 Gemini 2.0 Flash 思考模型背后的模型的最新预览版。
+2024 年 12 月 19 日
+模型更新：
+
+发布了 Gemini 2.0 Flash 思考模式的公开预览版。思考模式是一种测试时间计算模型，可让您在模型生成回答时查看其思考过程，并生成推理能力更强的回答。
+
+如需详细了解 Gemini 2.0 Flash Thinking 模式，请参阅我们的概览页面。
+
+2024 年 12 月 11 日
+模型更新：
+
+发布了公开预览版 Gemini 2.0 Flash Experimental。Gemini 2.0 Flash Experimental 的部分功能包括：
+速度是 Gemini 1.5 Pro 的两倍
+使用 Live API 进行双向流式传输
+以文本、图片和语音形式生成多模态回答
+使用内置工具进行多轮推理，以使用代码执行、搜索、函数调用等功能
+如需详细了解 Gemini 2.0 Flash，请参阅我们的概览页面。
+
+2024 年 11 月 21 日
+模型更新：
+
+发布了 gemini-exp-1121，这是一款功能更强大的实验性 Gemini API 模型。
+模型更新：
+
+更新了 gemini-1.5-flash-latest 和 gemini-1.5-flash 模型别名，以使用 gemini-1.5-flash-002。
+更改为 top_k 参数：gemini-1.5-flash-002 模型支持介于 1 和 41（不含）之间的 top_k 值。大于 40 的值将更改为 40。
+2024 年 11 月 14 日
+模型更新：
+
+发布了 gemini-exp-1114，这是一款强大的实验性 Gemini API 模型。
+2024 年 11 月 8 日
+API 更新：
+
+在 OpenAI 库 / REST API 中添加了对 Gemini 的支持。
+2024 年 10 月 31 日
+API 更新：
+
+添加了依托 Google 搜索进行接地的支持。
+2024 年 10 月 3 日
+模型更新：
+
+发布了 gemini-1.5-flash-8b-001，这是我们最小的 Gemini API 模型的稳定版。
+2024 年 9 月 24 日
+模型更新：
+
+发布了 gemini-1.5-pro-002 和 gemini-1.5-flash-002，这是 Gemini 1.5 Pro 和 1.5 Flash 的两个全新稳定版，已正式发布。
+更新了 gemini-1.5-pro-latest 模型代码以使用 gemini-1.5-pro-002，并更新了 gemini-1.5-flash-latest 模型代码以使用 gemini-1.5-flash-002。
+发布了 gemini-1.5-flash-8b-exp-0924 以取代 gemini-1.5-flash-8b-exp-0827。
+为 Gemini API 和 AI Studio 发布了公民诚信安全过滤器。
+在 Python 和 NodeJS 中为 Gemini 1.5 Pro 和 1.5 Flash 发布了对两个新参数的支持：frequencyPenalty 和 presencePenalty。
+2024 年 9 月 19 日
+AI Studio 更新：
+
+在模型回答中添加了“我喜欢”和“不喜欢”按钮，以便用户就回答质量提供反馈。
+API 更新：
+
+新增了对 Google Cloud 赠金的支持，现在可将 Google Cloud 赠金用于 Gemini API 用量。
+2024 年 9 月 17 日
+AI Studio 更新：
+
+添加了在 Colab 中打开按钮，可将提示以及运行提示所需的代码导出到 Colab 笔记本。此功能尚不支持使用工具（JSON 模式、函数调用或代码执行）进行提示。
+2024 年 9 月 13 日
+AI Studio 更新：
+
+新增了对比较模式的支持，可让您比较不同模型和提示的回答，以便找到最适合您应用场景的回答。
+2024 年 8 月 30 日
+模型更新：
+
+Gemini 1.5 Flash 支持通过模型配置提供 JSON 架构。
+2024 年 8 月 27 日
+模型更新：
+
+发布了以下实验性模型：
+gemini-1.5-pro-exp-0827
+gemini-1.5-flash-exp-0827
+gemini-1.5-flash-8b-exp-0827
+2024 年 8 月 9 日
+API 更新：
+
+添加了对 PDF 处理的支持。
+2024 年 8 月 5 日
+模型更新：
+
+发布了对 Gemini 1.5 Flash 的微调支持。
+2024 年 8 月 1 日
+模型更新：
+
+发布了 gemini-1.5-pro-exp-0801，即 Gemini 1.5 Pro 的新实验性版本。
+2024 年 7 月 12 日
+模型更新：
+
+从 Google AI 服务和工具中移除了对 Gemini 1.0 Pro Vision 的支持。
+2024 年 6 月 27 日
+模型更新：
+
+Gemini 1.5 Pro 的 200 万上下文窗口正式版发布。
+API 更新：
+
+新增了对代码执行的支持。
+2024 年 6 月 18 日
+API 更新：
+
+添加了对上下文缓存的支持。
+2024 年 6 月 12 日
+模型更新：
+
+Gemini 1.0 Pro Vision 已弃用。
+2024 年 5 月 23 日
+模型更新：
+
+Gemini 1.5 Pro (gemini-1.5-pro-001) 已发布正式版 (GA)。
+Gemini 1.5 Flash (gemini-1.5-flash-001) 已正式发布 (GA)。
+2024 年 5 月 14 日
+API 更新：
+
+为 Gemini 1.5 Pro 推出了 200 万个 token 的上下文窗口（等候名单）。
+为 Gemini 1.0 Pro 推出了“随用随付”结算方式，Gemini 1.5 Pro 和 Gemini 1.5 Flash 的结算方式即将推出。
+为即将推出的 Gemini 1.5 Pro 付费层级提高了速率限制。
+为 File API 添加了内置视频支持。
+为 File API 添加了纯文本支持。
+添加了对并行函数调用的支持，以便一次返回多个调用结果。
+2024 年 5 月 10 日
+模型更新：
+
+发布了预览版 Gemini 1.5 Flash (gemini-1.5-flash-latest)。
+2024 年 4 月 9 日
+模型更新：
+
+发布了预览版 Gemini 1.5 Pro (gemini-1.5-pro-latest)。
+发布了新的文本嵌入模型 text-embeddings-004，该模型支持小于 768 的弹性嵌入大小。
+API 更新：
+
+发布了 File API，用于临时存储媒体文件以用于提示。
+新增了对使用文本、图片和音频数据发出提示的支持，也称为多模态提示。如需了解详情，请参阅使用媒体内容进行提示。
+在 Beta 版中发布了系统指令。
+添加了函数调用模式，用于定义函数调用的执行行为。
+新增了对 response_mime_type 配置选项的支持，该选项可让您以 JSON 格式请求响应。
+2024 年 3 月 19 日
+模型更新：
+
+在 Google AI Studio 中或通过 Gemini API 添加了对调优 Gemini 1.0 Pro 的支持。
+2023 年 12 月 13 日
+模型更新：
+
+gemini-pro：适用于各种任务的新文本模型。兼顾能力和效率。
+gemini-pro-vision：适用于各种任务的新多模态模型。 兼顾功能和效率。
+embedding-001：新的嵌入模型。
+aqa：一种经过专门调优的新模型，经过训练，可使用文本段落作为依据来回答问题。
+如需了解详情，请参阅 Gemini 模型。
+
+API 版本更新：
+
+v1：稳定版 API 渠道。
+v1beta：Beta 渠道。此频道具有可能正在开发中的功能。
+如需了解详情，请参阅“API 版本”主题。
+
+API 更新：
+
+GenerateContent 是用于聊天和文本的单个统一端点。
+可通过 StreamGenerateContent 方法进行流式传输。
+多模态功能：图片是一种新支持的模态
+新的 Beta 版功能：
+函数调用
+语义检索器
+归因问答 (AQA)
+更新了候选对象数量：Gemini 模型仅返回 1 个候选对象。
+不同的 Safety Settings 和 SafetyRating 类别。如需了解详情，请参阅安全设置。
+目前尚不支持对 Gemini 模型进行模型调优（正在开发中）。

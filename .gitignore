@@ -1,0 +1,50 @@
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# PyInstaller / Packaging
+build/
+dist/
+*.manifest
+*.spec.bak
+
+# Secrets & Environment Variables (DO NOT COMMIT!)
+.env
+api-key.txt
+*.key
+*.pem
+
+# Virtual Environments
+.venv/
+env/
+venv/
+ENV/
+
+# Temporary / Runtime files & Caches
+tmp_autocut/
+tmp_gemini_profile/
+extracted_frames/
+test_export/
+test_pptx_export/
+temp/
+tmp/
+cache/
+output/
+logs/
+*.log
+*.tmp
+
+# Third-party binaries
+poppler/
+
+# OS / Editor artifacts
+.DS_Store
+Thumbs.db
+ehthumbs.db
+[Dd]esktop.ini
+.idea/
+.vscode/
+*.swp
+*.swo
+*~

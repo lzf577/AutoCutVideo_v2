@@ -1,0 +1,390 @@
+[
+  {
+    "id": "c97fbc66-1330-45fb-b10b-78d92350bf8b",
+    "text": "更新流程",
+    "style": {
+      "node_bg": [
+        "#c6def1",
+        "#bcf0d3",
+        "#aaf2c8"
+      ],
+      "node_border": [
+        "#a8b8d0",
+        "#9ad0b3",
+        "#8ad0a8"
+      ],
+      "root_bg": "#c1c9ff",
+      "root_border": "#a3aee6",
+      "root_text_color": "#2c3e50",
+      "text_color": "#2c3e50",
+      "edge_color": "#93a1c8",
+      "edge_width": 2,
+      "radius": 4,
+      "font_family": "Microsoft YaHei",
+      "font_size": 11,
+      "root_font_size": 13,
+      "root_font_weight": "bold",
+      "layout": "horizontal"
+    },
+    "relations": [],
+    "children": [
+      {
+        "id": "bc577edc-951c-4ee6-995b-f637b8a7aea7",
+        "text": "1",
+        "style": {},
+        "relations": [],
+        "children": [
+          {
+            "id": "5c3369f8-6681-46cd-af2a-a3d2678115fe",
+            "text": "导入视频",
+            "style": {},
+            "relations": [],
+            "children": [
+              {
+                "id": "7c65e6f2-4123-429b-8cf6-547be8fe97b5",
+                "text": "提取音频",
+                "style": {},
+                "relations": [],
+                "children": [
+                  {
+                    "id": "2cf4c137-4ae9-450e-88bc-a4b71dcd9b89",
+                    "text": "压缩音频",
+                    "style": {},
+                    "relations": [],
+                    "children": [
+                      {
+                        "id": "519ea3d6-9afa-480b-b7be-7d7e81727725",
+                        "text": "目的",
+                        "style": {},
+                        "relations": [],
+                        "children": [
+                          {
+                            "id": "dcba5899-50c6-445b-b598-e8efa9a4de1e",
+                            "text": "节省token",
+                            "style": {},
+                            "relations": [],
+                            "children": []
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "id": "ac4ff9b2-b5e6-4b4a-ad5f-69fe5c7fa6f4",
+            "text": "提交音频",
+            "style": {},
+            "relations": [],
+            "children": [
+              {
+                "id": "1da20ea9-1ee4-4a75-b3da-434d549f1684",
+                "text": "转换成字幕",
+                "style": {},
+                "relations": [],
+                "children": [
+                  {
+                    "id": "9caac1f5-730d-435b-8980-e2d6c94f7c03",
+                    "text": "备用",
+                    "style": {},
+                    "relations": [],
+                    "children": []
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "c4181a87-dfde-4a16-bd52-aa8dd68e72ce",
+        "text": "2",
+        "style": {},
+        "relations": [],
+        "children": [
+          {
+            "id": "2c9caa22-e7cd-4820-9122-b53a7ba8f888",
+            "text": "导入PDF",
+            "style": {},
+            "relations": [],
+            "children": [
+              {
+                "id": "5d29b54b-0554-4c7b-9ddd-747a916471f0",
+                "text": "提取图片",
+                "style": {},
+                "relations": [],
+                "children": [
+                  {
+                    "id": "d7bf8967-1ffe-4fab-8dfb-029a46bddc1b",
+                    "text": "压缩图片",
+                    "style": {},
+                    "relations": [],
+                    "children": [
+                      {
+                        "id": "f09ec692-b35d-4a0b-921d-4f37688ecfa7",
+                        "text": "目的",
+                        "style": {},
+                        "relations": [],
+                        "children": [
+                          {
+                            "id": "d4196044-96f8-4810-93e2-fee524fad312",
+                            "text": "节省token",
+                            "style": {},
+                            "relations": [],
+                            "children": []
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "id": "3345a476-5977-4b57-85ca-c90dbd52d585",
+            "text": "提交压缩的图片",
+            "style": {},
+            "relations": [],
+            "children": [
+              {
+                "id": "2c60b0b9-864d-4c43-9e44-d9dc8baff437",
+                "text": "分析图片内容",
+                "style": {},
+                "relations": [],
+                "children": [
+                  {
+                    "id": "9d61418d-ef24-424f-af0d-2ec9cb09c5f5",
+                    "text": "备用",
+                    "style": {},
+                    "relations": [],
+                    "children": []
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "480f4530-37e8-4fd2-9c09-7a4681cc9511",
+        "text": "3",
+        "style": {},
+        "relations": [],
+        "children": [
+          {
+            "id": "ade5619b-c052-4383-bd1c-678a6b942d87",
+            "text": "在原视频插入图片",
+            "style": {},
+            "relations": [],
+            "children": [
+              {
+                "id": "ad6ae2d7-5373-45e7-9dd6-da98592fe26a",
+                "text": "原图",
+                "style": {},
+                "relations": [],
+                "children": [
+                  {
+                    "id": "6b93ae3a-3447-4371-a060-03e2969953fe",
+                    "text": "不是压缩的图片",
+                    "style": {},
+                    "relations": [],
+                    "children": []
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "5872279c-b8a0-4811-8019-0e93efbf8c63",
+        "text": "4",
+        "style": {},
+        "relations": [],
+        "children": [
+          {
+            "id": "134ae981-4f62-4121-b5e1-ca3d3043f01a",
+            "text": "插入字幕",
+            "style": {},
+            "relations": [],
+            "children": []
+          }
+        ]
+      },
+      {
+        "id": "3c85fc0f-17db-4281-b4f1-246ec13a3248",
+        "text": "5",
+        "style": {},
+        "relations": [],
+        "children": [
+          {
+            "id": "1a1e9eb6-811d-477f-b92c-0dd6118fdba8",
+            "text": "硬编码视频",
+            "style": {},
+            "relations": [],
+            "children": []
+          }
+        ]
+      },
+      {
+        "id": "5a3ab2ed-e27f-4022-a82e-0fb984a9f5fc",
+        "text": "6",
+        "style": {},
+        "relations": [],
+        "children": [
+          {
+            "id": "f149a1a0-c802-46d0-987e-2a67c75418f9",
+            "text": "设置",
+            "style": {},
+            "relations": [],
+            "children": [
+              {
+                "id": "4980c89c-ef31-4481-a1bc-699f5650c257",
+                "text": "压缩图片的质量",
+                "style": {},
+                "relations": [],
+                "children": []
+              },
+              {
+                "id": "1a858442-3e55-475e-b262-02bfff211cc5",
+                "text": "压缩音频的质量",
+                "style": {},
+                "relations": [],
+                "children": []
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "9deaf6c6-da61-4721-a41e-f98f567d2e43",
+        "text": "7",
+        "style": {},
+        "relations": [],
+        "children": [
+          {
+            "id": "115f79e5-c7a1-4c1a-b994-9334b5a89582",
+            "text": "设置图片持久化",
+            "style": {},
+            "relations": [],
+            "children": []
+          },
+          {
+            "id": "6b0e16ae-ff7a-49a5-a774-b8128b0fdc66",
+            "text": "生成tmp文件夹",
+            "style": {},
+            "relations": [],
+            "children": [
+              {
+                "id": "ed6477e7-6618-4e39-8dc0-51c5f2e5375f",
+                "text": "压缩音频和图片",
+                "style": {},
+                "relations": [],
+                "children": [
+                  {
+                    "id": "8d5812d2-b958-4da3-b118-5b38c58077e1",
+                    "text": "存放在这里",
+                    "style": {},
+                    "relations": [],
+                    "children": []
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "id": "9ac85d65-5385-4e08-830b-b69e929d90ab",
+            "text": "硬编码视频后",
+            "style": {},
+            "relations": [],
+            "children": [
+              {
+                "id": "346ee2dc-5a25-4def-b936-fe0c855aa0f4",
+                "text": "提示是否删除临时文件",
+                "style": {},
+                "relations": [],
+                "children": []
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "367d8731-5dd8-4f4e-b7ad-fc4af8b22254",
+        "text": "8",
+        "style": {},
+        "relations": [],
+        "children": [
+          {
+            "id": "17b46c19-0e60-43e6-b04f-52a8e0b04a20",
+            "text": "三个窗口",
+            "style": {},
+            "relations": [],
+            "children": [
+              {
+                "id": "4376788e-096d-4711-b092-afaa2c71d2b3",
+                "text": "窗口1",
+                "style": {},
+                "relations": [],
+                "children": [
+                  {
+                    "id": "79603360-10ee-4fd4-9721-e73a8549e646",
+                    "text": "专门处理音频转字幕",
+                    "style": {},
+                    "relations": [],
+                    "children": []
+                  }
+                ]
+              },
+              {
+                "id": "80cd4c09-ff4c-462d-a128-c6997ef59fda",
+                "text": "窗口2",
+                "style": {},
+                "relations": [],
+                "children": [
+                  {
+                    "id": "d53149a6-05c2-4a30-aa96-0a24a7a78179",
+                    "text": "专门处理PDF转图片",
+                    "style": {},
+                    "relations": [],
+                    "children": [
+                      {
+                        "id": "3668381e-0404-473f-ac85-4474cd12ebf7",
+                        "text": "并标记关键词",
+                        "style": {},
+                        "relations": [],
+                        "children": []
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "id": "f75bd9d5-b43a-4fa2-88d5-dba1089fda73",
+                "text": "窗口3",
+                "style": {},
+                "relations": [],
+                "children": [
+                  {
+                    "id": "b778dd0b-85d3-4f60-a24b-7b9f0e334b8c",
+                    "text": "合并窗口",
+                    "style": {},
+                    "relations": [],
+                    "children": []
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "_pos": {
+      "x": 0.0,
+      "y": 0.0
+    }
+  }
+]

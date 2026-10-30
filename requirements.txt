@@ -1,0 +1,11 @@
+moviepy
+openai
+python-dotenv
+PyQt6
+Pillow
+PyMuPDF
+faster-whisper
+numpy==1.26.4
+python-docx
+playwright
+markdown

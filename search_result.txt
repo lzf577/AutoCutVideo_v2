@@ -1,0 +1,42 @@
+490: class AIRewriteArticleWorker(QThread):
+531: "你是一个专业的微信公众号爆款文章写手。我会给你一份视频的逐字稿，以及视频中插入的幻灯片/配图的时间点和文件名。\n"
+532: "请你根据这些内容，重新润色、改写成一篇结构清晰、吸引人的微信公众号图文文章。\n"
+536: "3. 根据我提供的【配图信息】，在文章的相关逻辑位置插入对应的配图。\n"
+538: "5. 你的回复应该是纯净的 Markdown 文章内容，不要输出任何寒暄废话。"
+887: self.auto_pipeline_running = False
+889: self.auto_pipeline_running = False
+890: self.auto_pipeline_step = 0
+1114: self.btn_auto_export.clicked.connect(self.start_auto_pipeline)
+2461: self.auto_pipeline_running = False
+2484: def start_auto_pipeline(self):
+2505: self.auto_pipeline_running = True
+2510: self.auto_pipeline_step = 1
+2515: self.auto_pipeline_step = 1
+2542: if success and getattr(self, 'auto_pipeline_running', False) and self.auto_pipeline_step == 1:
+2544: self.auto_pipeline_step = 2
+2550: self.auto_pipeline_step = 2
+2554: self.auto_pipeline_step = 2
+2556: elif not success and getattr(self, 'auto_pipeline_running', False):
+2558: self.auto_pipeline_running = False
+2605: if not getattr(self, 'auto_pipeline_running', False):
+2706: if not getattr(self, 'auto_pipeline_running', False):
+2709: if getattr(self, 'auto_pipeline_running', False) and self.auto_pipeline_step == 2:
+2712: self.auto_pipeline_step = 3
+2718: self.auto_pipeline_step = 3
+2721: self.auto_pipeline_step = 4
+2727: self.auto_pipeline_running = False
+2764: if not getattr(self, 'auto_pipeline_running', False):
+2767: if getattr(self, 'auto_pipeline_running', False) and self.auto_pipeline_step == 3:
+2769: self.auto_pipeline_step = 4
+2775: self.auto_pipeline_running = False
+2806: lbl_doc = QLabel("基于 AI 精修文章的文档 (需调用大模型)：")
+2943: self.ai_article_worker = AIRewriteArticleWorker(self.srt_data, image_clips, api_key, base_url, model, out_dir, video_name=video_name)
+2948: self.log_message("🚀 开始启动 AI 文章智能重写任务...")
+2955: self.log_message("✅ AI 文章重写圆满完成！")
+3037: self.log_message(f"❌ AI 文章重写失败: {result}")
+3097: QMessageBox.information(self, "成功", f"图文文章已生成至：\n{article_path}\n\n您可以使用 Typora 等 Markdown 编辑器打开，或复制到 MdNice 等工具排版发公众号。")
+3099: QMessageBox.warning(self, "错误", f"生成文章失败: {e}")
+3138: if not getattr(self, 'auto_pipeline_running', False):
+3147: if not getattr(self, 'auto_pipeline_running', False):
+3150: if getattr(self, 'auto_pipeline_running', False):
+3151: self.auto_pipeline_running = False
